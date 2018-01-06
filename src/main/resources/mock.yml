@@ -1,0 +1,20 @@
+server:
+  contextPath:
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+spring:
+  profiles:
+    include: config
+
+  autoconfigure:
+    exclude: >
+      org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,
+      org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,
+      org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration

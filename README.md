@@ -1,0 +1,5 @@
+- Checkout the code
+- add your ports to `application-ext.yml`
+- specify response location with property `mock.responseLocation` property
+- specify url to be re-written (with regex) using `mock.urlRewrites` property
+- add `_${HTTP_METHOD}_response.json` into the appropriate folder (corresponding to the URI)

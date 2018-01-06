@@ -1,0 +1,21 @@
+#Copy this to ./config (or elsewhere if responseLocation is redefined)
+#Add required ports + urlRewrites
+
+server:
+  port: 8080
+  additionalPorts:
+
+mock:
+  responseLocation: ./config
+  urlRewrites: {}
+
+
+#EXAMPLE:
+
+#server:
+#  port: 8080
+#  additionalPorts: 8081,8082,8083
+#mock:
+#  responseLocation: ./config
+#  urlRewrites:
+#    some\\/uri\\/pattern\\/([0-9]+): "some/uri/pattern/ID"
